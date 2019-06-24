@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+</head>
+<body>
+    <h2>Question {{ number }}</h2>
+        {{ question }}
+      <form method="post">
+        <p><input type="radio" id="1" name="Answer" value="{{ answers[0][0] }}" >{{ answers[0][0] }}</p>
+        <p><input type="radio" id="2" name="Answer" value="{{ answers[1][0] }}" >{{ answers[1][0] }}</p>
+        <p><input type="radio" id="3" name="Answer" value="{{ answers[2][0] }}" >{{ answers[2][0] }}</p>
+        <p><input type="radio" id="4" name="Answer" checked="checked" value="{{ answers[3][0] }}" >{{ answers[3][0] }}</p>
+
+          <p class="submit"><input type="submit" name="Button" value="Save"></p>
+      </form>
+
+</body>
+</html>
